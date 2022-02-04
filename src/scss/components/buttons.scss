@@ -1,34 +1,74 @@
-button {
+button,
+input[type='submit'],
+input[type='button'] {
   border-radius: $border-radius;
   border: none;
   padding: spacing(2) spacing(5);
   font-family: $font-family;
   font-weight: 600;
   cursor: pointer;
-  font-size: $button__font-size;
-
-  &.button__primary {
-    background-color: $primary;
-    color: $white;
-
-    &.button__outlined {
-      color: $primary;
-      border: 1px solid $primary;
-    }
-
-    &.button__link {
-      color: $primary;
-    }
-  }
+  font-size: $font-size__button;
 
   &.button {
+    &__filled {
+      color: $white;
+
+      &--primary {
+        @include button-filled($primary);
+      }
+
+      &--secondary {
+        @include button-filled($secondary);
+      }
+
+      &--tertiary {
+        @include button-filled($tertiary);
+      }
+
+      &--fourthly {
+        @include button-filled($fourthly);
+      }
+    }
+
     &__outlined {
       background-color: $white;
+
+      &--primary {
+        @include button-outlined($primary);
+      }
+
+      &--secondary {
+        @include button-outlined($secondary);
+      }
+
+      &--tertiary {
+        @include button-outlined($tertiary);
+      }
+
+      &--fourthly {
+        @include button-outlined($fourthly);
+      }
     }
 
     &__link {
       text-decoration: underline;
       background-color: transparent;
+
+      &--primary {
+        @include button-link($primary);
+      }
+
+      &--secondary {
+        @include button-link($secondary);
+      }
+
+      &--tertiary {
+        @include button-link($tertiary);
+      }
+
+      &--fourthly {
+        @include button-link($fourthly);
+      }
     }
   }
 }

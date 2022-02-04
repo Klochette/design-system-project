@@ -1,11 +1,18 @@
-import Button from 'components/commons/Buttons';
 import React from 'react';
 
 const Home = (): JSX.Element => {
   return (
-    <Button variant="link" uppercase>
-      click me
-    </Button>
+    <div className="input-group">
+      <input
+        type="password"
+        id="password"
+        className="input-group__input"
+        placeholder="Password"
+      />
+      <label className="input-group__label" htmlFor="password">
+        Password
+      </label>
+    </div>
   );
 };
 

@@ -1,0 +1,52 @@
+.input-group {
+  font-family: $font-family;
+  margin-top: spacing(2);
+  position: relative;
+  color: $text__body-black;
+  font-size: $font-size__body;
+
+  &__label {
+    position: absolute;
+    top: spacing(3);
+    left: spacing(9);
+    color: transparent;
+    transition: all 200ms;
+  }
+
+  &__input {
+    font-size: $font-size__body;
+    padding: spacing(2);
+    padding-left: spacing(9);
+    border-radius: $border-radius;
+    border: 1px solid $borders__grey--light;
+    font-family: $font-family;
+
+    &:focus-visible {
+      outline: none;
+    }
+
+    &:focus::placeholder {
+      color: $white;
+    }
+    &::placeholder {
+      color: $borders__grey;
+      transition: all 200ms;
+    }
+  }
+}
+
+.input-group__input:focus + .input-group__label,
+.input-group__input:not(:placeholder-shown) + .input-group__label {
+  font-size: $font-size__label--small;
+  transform: translate3d(-30px, -150%, 0);
+  background-color: $white;
+  padding: spacing(0) spacing(1);
+  color: $text__body-black;
+}
+
+input[type='email'] {
+  @include input-icon-left('../../assets/icons/email.svg');
+}
+input[type='password'] {
+  @include input-icon-left('../../assets/icons/password.svg');
+}

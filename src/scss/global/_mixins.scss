@@ -1,1 +1,19 @@
 // mixins
+
+// buttons
+@mixin button-outlined($color) {
+  border: 1px solid $color;
+  color: $color;
+}
+
+@mixin button-filled($color) {
+  background-color: $color;
+}
+
+@mixin button-link($color) {
+  color: $color;
+}
+
+@mixin input-icon-left($url) {
+  background: url($url) no-repeat scroll spacing(1);
+}
