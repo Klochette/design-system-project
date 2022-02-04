@@ -53,6 +53,7 @@ input[type='button'] {
     &__link {
       text-decoration: underline;
       background-color: transparent;
+      padding: spacing(2) spacing(0);
 
       &--primary {
         @include button-link($primary);
