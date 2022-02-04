@@ -5,6 +5,8 @@
 @import 'scss/global/medias';
 @import 'scss/global/mixins';
 @import 'scss/global/variables';
+@import 'scss/global/functions';
+@import 'scss/components/components';
 
 a {
   color: inherit;
@@ -13,4 +15,12 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.text__capitalize {
+  text-transform: uppercase;
+}
+
+.full-width {
+  width: 100%;
 }
