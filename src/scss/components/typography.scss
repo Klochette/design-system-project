@@ -1,0 +1,27 @@
+.typography {
+  font-family: $font-family;
+
+  &__h1 {
+    font-size: $font-size__h1;
+    color: $text__title-black;
+  }
+
+  &__p {
+    font-size: $font-size__body;
+    color: $text__body-black;
+  }
+
+  &__a {
+    color: inherit;
+    font-size: $font-size__body;
+    color: $text__body-black;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.textAlign__center {
+  text-align: center;
+}
