@@ -21,7 +21,7 @@ const RecoveryPassword = (): JSX.Element => {
         Recevoir les instruction
       </Button>
       <Button color="tertiary" variant="outlined" fullWidth>
-        <Link to="/signin">Se connecter</Link>
+        <Link to="/">Se connecter</Link>
       </Button>
     </div>
   );
