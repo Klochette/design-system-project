@@ -2,7 +2,6 @@ import Button from 'components/Button';
 import Input from 'components/Input';
 import Typography from 'components/Typography';
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 const RecoveryPassword = (): JSX.Element => {
   return (
@@ -20,9 +19,9 @@ const RecoveryPassword = (): JSX.Element => {
       <Button color="tertiary" fullWidth>
         Recevoir les instruction
       </Button>
-      <Button color="tertiary" variant="outlined" fullWidth>
-        <Link to="/">Se connecter</Link>
-      </Button>
+      <Typography link="/" variant="link">
+        Se connecter
+      </Typography>
     </div>
   );
 };
