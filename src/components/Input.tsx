@@ -11,7 +11,7 @@ const Input = ({ fullWidth, id, type, label }: InputProps): JSX.Element => {
   const fullWidthForClassName = fullWidth ? ' full__width' : '';
 
   return (
-    <div className={`input-group${fullWidthForClassName}`}>
+    <fieldset className={`input-group${fullWidthForClassName}`}>
       <input
         type={type}
         id={id}
@@ -21,7 +21,7 @@ const Input = ({ fullWidth, id, type, label }: InputProps): JSX.Element => {
       <label className="input-group__label" htmlFor={id}>
         {label}
       </label>
-    </div>
+    </fieldset>
   );
 };
 
