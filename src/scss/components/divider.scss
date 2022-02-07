@@ -1,0 +1,21 @@
+.divider {
+  width: 100%;
+  background-color: $borders__grey;
+  height: 1px;
+  margin: spacing(5) spacing(0);
+  position: relative;
+
+  &__text {
+    position: absolute;
+    line-height: 20%;
+    width: 100%;
+    text-align: center;
+    top: -250%;
+    color: $text__body-black;
+
+    &--background {
+      background-color: $white;
+      padding: spacing(0) spacing(4);
+    }
+  }
+}

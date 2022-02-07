@@ -33,3 +33,51 @@ span {
 .full__width {
   width: 100%;
 }
+
+.typography {
+  font-family: $font-family;
+
+  &__h1 {
+    font-size: $font-size__h1;
+    color: $text__title-black;
+  }
+
+  &__p {
+    font-size: $font-size__body;
+    color: $text__body-black;
+  }
+
+  &__a {
+    color: inherit;
+    font-size: $font-size__body;
+    color: $text__body-black;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.textAlign__center {
+  text-align: center;
+}
+
+.signinLogin__container {
+  display: flex;
+  flex-direction: column;
+  gap: spacing(3);
+  height: 90vh;
+  justify-content: center;
+  width: 350px;
+  margin: auto;
+}
+
+.recoveryPassword__container {
+  display: flex;
+  flex-direction: column;
+  gap: spacing(4);
+  width: 350px;
+  justify-content: center;
+  height: 90vh;
+  margin: auto;
+}

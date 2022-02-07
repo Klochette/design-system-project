@@ -1,10 +1,10 @@
 .form__container {
-  width: 350px;
+  width: 100%;
 }
 
 .form__inputs {
   display: flex;
   flex-direction: column;
-  gap: spacing(1);
-  margin-bottom: spacing(4);
+  gap: spacing(3);
+  margin-top: spacing(2);
 }
