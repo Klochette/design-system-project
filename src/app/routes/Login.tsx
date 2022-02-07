@@ -27,9 +27,9 @@ const Login = () => {
         </Form>
       </div>
       <Typography textAlign="center">
-        Vous n'avez pas encore de compte ?{' '}
+        Vous n'avez pas encore de compte ?
       </Typography>
-      <Typography textAlign="center" link="/signin" variant="link">
+      <Typography textAlign="center" link="/passwordRecovery" variant="link">
         Inscrivez vous ici
       </Typography>
     </div>
